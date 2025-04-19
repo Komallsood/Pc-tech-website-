@@ -9,9 +9,6 @@ export const incrementDecrement = (event, id, stock, price) => {
   let quantity = 1;
   let localStoragePrice = 0;
 
-  //   ----------------------------------------
-  //   Get the data from localStorage
-  //   ----------------------------------------
   let localCartProducts = getCartProductFromLS();
   let existingProd = localCartProducts.find((curProd) => curProd.id === id);
 
@@ -50,14 +47,10 @@ export const incrementDecrement = (event, id, stock, price) => {
   //   console.log(updatedCart);
   localStorage.setItem("cartProductLS", JSON.stringify(updatedCart));
 
-  //   also we need to reflect the changes on the screen too
+
   productQuantity.innerText = quantity;
   productPrice.innerText = localStoragePrice;
 
-  //todo Don't Forget To LIKE SHARE & SUBSCRIBE TO THAPA TECHNCIAL YOUTUBE CHANNEL 👉 https://www.youtube.com/thapatechnical
 
-  // -----------------------------------------------------
-  // calculating the card total in our cartProducts page
-  // --------------------------------------------------------
   updateCartProductTotal();
 };

@@ -17,7 +17,7 @@
   --buttonColor: #2a2c30;
   --secondaryColor: #4b4f56;
   --borderColor: #e3eaf0;
-  --backgroundColor: #f7f7f7;
+  --backgroundColor: #ffffff;
   --backgroundSecondary: #fefefe;
   --textColor: #1e1f23;
   --anchorColor: #535bf2;
@@ -213,7 +213,7 @@ textarea:focus-visible {
 /***** Navbar Section *****/
 
 .top_txt {
-  background-color: var(--buttonColor);
+  background-color:black;
   color: var(--backgroundColor);
 
   & .head_txt p {
@@ -283,15 +283,15 @@ textarea:focus-visible {
 main {
   height: 84vh;
   position: relative;
-  background-color: #d9e9ff;
+  background-color: #babdc1;
 
   background-image: linear-gradient(
     to top right,
-    #3d86fa,
-    #4484fb,
+    #525862,
+    #dba2a2,
     #679eff,
     #b3d2ff,
-    #ebf3fe
+    #acc173
   );
 }
 
@@ -989,11 +989,7 @@ footer {
   }
 }
 
-/*****  Add to Cart page ends *****/
 
-/*****  media queries Section *****/
-
-/* https://getbootstrap.com/docs/5.0/layout/breakpoints/ */
 
 @media (width <= 1380px) {
   html {
